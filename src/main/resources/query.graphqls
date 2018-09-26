@@ -1,0 +1,20 @@
+type Query {
+    articles(limit: Int!, offset: Int!): [Article!]!
+    article(id: ID!): Article
+}
+
+type Mutation {
+    addArticle(authorName: String!, tittle: String!, contents: String!): Article!
+}
+
+type Article {
+    id: ID!
+    title: String!
+    author: Author!
+    contents: String!
+    releaseDate: String!
+}
+
+type Author {
+    name: String!
+}

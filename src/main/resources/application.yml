@@ -1,0 +1,4 @@
+voyager:
+    mapping: /voyager
+    enabled: true
+    pageTitle: Voyager
